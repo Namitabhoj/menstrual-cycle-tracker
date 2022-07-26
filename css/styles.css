@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Advent Pro';
+}
+
+.home_page {
+    background-image: url("./images/period-calendar-with-copy-space.jpg");
+    background-position: center center center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.nav-area {
+    float: left;
+    list-style: none;
+    margin: 30px 0 0 60px;
+}
+
+.nav-area li {
+    display: inline-block;
+}
+
+.nav-area li a {
+    color: black;
+    text-decoration: none;
+    padding: 20px 20px 0 20px;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.nav-area li a:hover {
+    border-bottom: 2px solid #CE5D5F;
+}
+
+.home_page_text {
+    display: table;
+    padding-top: 80px;
+    height: 600px;
+    width: 100%;
+}
+
+.home_page_text_container h1 {
+    margin: 10% 0% 0 3%;
+    text-align: left;
+    color: #CE5D5F;
+    font-size: 60px;
+    text-transform: uppercase;
+}
+
+.home_page_text_container p {
+    position: relative;
+    margin: 0% 50% 0% 3%;
+    text-align: left;
+    font-size: 20px;
+}

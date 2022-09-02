@@ -6,12 +6,16 @@
 
 body {
     font-family: 'Advent Pro';
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 .home_page {
     background-image: url("./images/period-calendar-with-copy-space.jpg");
-    background-position: center center center center;
+    background-position: center center;
     background-repeat: no-repeat;
+    height: 100%;
     background-size: cover;
 }
 

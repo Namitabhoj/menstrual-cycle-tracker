@@ -8,16 +8,25 @@
     <title>Home | Menstrual Cycle</title>
     <link rel="stylesheet" href="./css/styles.css">
     <link href='https://fonts.googleapis.com/css?family=Advent Pro' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 
 <body>
+    
     <div class="home_page">
-        <ul class="nav-area">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Calender</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
+        <nav class="navbar">
+            <div class="navbar__menu" id="navbar__menu__id">
+                <a href="/" class="navbar__menu--links">Home</a>
+                <a href="/" class="navbar__menu--links">Calender</a>
+                <a href="/" class="navbar__menu--links">Article</a>
+                <a href="/" class="navbar__menu--links">About</a>
+                <a href="/" class="navbar__menu--links">Contact us</a>
+                <a href="javascript:void(0);" class="icon" onclick="MobileNavBar()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </nav>
         <div class="home_page_text">
             <div class="home_page_text_container">
                 <h1>WELCOME TO TRACKER</h1>
@@ -30,18 +39,20 @@
         hi
         <h1>hiddad</h1>
     </div>
-    <div>
         hi
         <h1>hiddad</h1>
     </div>
-    <div>
-        hi
-        <h1>hiddad</h1>
-    </div>
-    <div>
-        hi
-        <h1>hiddad</h1>
-    </div>
+    <script>
+         function MobileNavBar() {
+            var x = document.getElementById("navbar__menu__id");
+            if (x.className === "navbar__menu") {
+                x.className += "_responsive";
+                console.log(x.className);
+            } else {
+                x.className = "navbar__menu";
+            }
+        }
+    </script>
 </body>
 
 </html>

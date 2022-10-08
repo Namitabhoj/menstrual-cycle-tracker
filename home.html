@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./css/styles.css">
     <link href='https://fonts.googleapis.com/css?family=Advent Pro' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <script src="./js/script.js"></script>
 </head>
 
 <body>
@@ -35,24 +35,69 @@
             </div>
         </div>
     </div>
-    <div>
-        hi
-        <h1>hiddad</h1>
+    <div class="calender">
+       <div class="calender_title">
+            <h1>
+                Calender
+            </h1>
+       </div>
+       <div class="calender_content">
+            <div class="calender_text_part">
+                <div class="calender_text">
+                    <p>
+                        Fill Up The Form 
+                    </p>
+                    <p>
+                        & 
+                    </p>
+                    <p>
+                        Know You Next Period Date and Ovulation Date
+                    </p>
+                </div>
+            </div>
+            <div class="calender_form_part">
+                <p>Select dates</p>
+                <form>
+                    <table>
+                        <tr>
+                            <td>
+                                <label class="date_title" >Start Date Of Last Period</label>
+                            </td>
+                            <td>
+                                <input type="date" class="date_picker" onchange="getVal()" id="date_picker">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label class="date_title" >End Date Of Last Period</label>
+                            </td>
+                            <td>
+                                <input type="date" class="date_picker">
+                            </td>
+                        </tr>
+                        <!-- <tr>
+                            <td>
+                                <label class="date_title" >Start Date Of Last Period</label>
+                            </td>
+                            <td>
+                                <input type="date" class="date_picker">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label class="date_title" >End Date Of Last Period</label>
+                            </td>
+                            <td>
+                                <input type="date" class="date_picker">
+                            </td>
+                        </tr> -->
+                    </table>
+                </form>
+            </div>
+            
+       </div>
+       
     </div>
-        hi
-        <h1>hiddad</h1>
-    </div>
-    <script>
-         function MobileNavBar() {
-            var x = document.getElementById("navbar__menu__id");
-            if (x.className === "navbar__menu") {
-                x.className += "_responsive";
-                console.log(x.className);
-            } else {
-                x.className = "navbar__menu";
-            }
-        }
-    </script>
 </body>
 
 </html>

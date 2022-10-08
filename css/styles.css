@@ -70,6 +70,64 @@ body {
     font-size: 20px;
 }
 
+.calender_title{
+    text-align: center;
+    margin: 20px 0 20px 0;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+.calender_content{
+    padding: 100px;
+    background-color: #ce5d5f;
+    display: flex;
+    justify-content: center;
+}
+
+.calender_text_part{
+    width: 50%;
+    padding: 50px 200px 0 200px;
+}
+
+.calender_text_part p{
+    text-align: center;
+    color: white;
+    font-size: 30px;
+}
+
+.calender_form_part{
+    width: 50%;
+    background-color: white;
+}
+
+.calender_form_part p{
+    text-align: center;
+    color: black;
+    font-size: 30px;
+    text-transform: capitalize;
+    padding: 20px;
+}
+
+form{
+    padding: 20px;
+}
+
+.date_title{
+    text-transform: uppercase;
+    font-size: 20px;
+    color: #CE5D5F;
+    font-size: 25px;
+    padding: 20px;
+    margin:  50px;
+}
+
+.date_picker{
+    padding: 10px;
+    border: 2px solid #D9D9D9;
+    font-size: 20px;
+    background-color: #D9D9D9;
+}
+
 @media screen and (max-width: 600px) {
     .navbar__menu a {
         display: none;
@@ -108,5 +166,28 @@ body {
         float: none;
         display: block;
         text-align: left;
-    }    
+    } 
+    
+    .calender_content{
+        display:inline-block;
+        margin: 0;
+        padding: 0;
+    }
+
+    .calender_text_part{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    .calender_form_part{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .date_title{
+        margin: 0;
+        padding: 0;
+    }
 }
